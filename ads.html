@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ads - Shortart Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Shortart Logo" class="logo-img">
+                Short<span>art</span>
+            </a>
+           
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="ads.html" class="nav-link">Ads</a></li>
+                <li class="nav-item"><a href="business.html" class="nav-link">Business with Us</a></li>
+                <li class="nav-item"><a href="investments.html" class="nav-link">Investments</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="https://play.google.com/store/apps/details?id=com.meda.digitalart" class="cta-button" target="_blank">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ads Section -->
+    <section id="ads">
+        <div class="container">
+            <h2 class="section-title">Ads on Shortart</h2>
+            <div class="ads-content">
+                <p><strong>We provide ads service on our Shortart platform to reach global users.</strong></p>
+                <div class="ad-types">
+                    <div class="ad-type">
+                        <span class="ad-icon">🖼️</span>
+                        <h3>Image Ad</h3>
+                    </div>
+                    <div class="ad-type">
+                        <span class="ad-icon">🎥</span>
+                        <h3>Video Ad</h3>
+                    </div>
+                    <div class="ad-type">
+                        <span class="ad-icon">👤</span>
+                        <h3>Profile Ad</h3>
+                    </div>
+                    <div class="ad-type">
+                        <span class="ad-icon">⏩</span>
+                        <h3>Short Video Ad</h3>
+                    </div>
+                    <div class="ad-type">
+                        <span class="ad-icon">🛠️</span>
+                        <h3>Services Ad</h3>
+                    </div>
+                    <div class="ad-type">
+                        <span class="ad-icon">🔍</span>
+                        <h3>Search Ad</h3>
+                    </div>
+                </div>
+                <p><strong>you can simply send your requirements below, and we can play your Ad in our app.</strong></p>
+                <form class="ad-request-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ad-type">Ad Type</label>
+                        <select id="ad-type" name="ad-type" required>
+                            <option value="image">Image Ad</option>
+                            <option value="video">Video Ad</option>
+                            <option value="profile">Profile Ad</option>
+                            <option value="short-video">Short Video Ad</option>
+                            <option value="services">Services Ad</option>
+                            <option value="search">Search Ad</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <div class="footer-logo">Short<span>art</span></div>
+            <p class="footer-description">A powerful software company specializing in application development, web development, machine learning, and computer vision.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul class="footer-link-list">
+                <li class="footer-link-item"><a href="#" class="footer-link">Home</a></li>
+                <li class="footer-link-item"><a href="#about" class="footer-link">About</a></li>
+                <li class="footer-link-item"><a href="#services" class="footer-link">Services</a></li>
+                <li class="footer-link-item"><a href="#careers" class="footer-link">Careers</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Services</h4>
+            <ul class="footer-link-list">
+                <li class="footer-link-item"><a href="#" class="footer-link">App Development</a></li>
+                <li class="footer-link-item"><a href="#" class="footer-link">Web Development</a></li>
+                <li class="footer-link-item"><a href="#" class="footer-link">Machine Learning</a></li>
+                <li class="footer-link-item"><a href="#" class="footer-link">Computer Vision</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Legal</h4>
+            <ul class="footer-link-list">
+                <li class="footer-link-item"><a href="#" class="footer-link">Terms</a></li>
+                <li class="footer-link-item"><a href="#" class="footer-link">Privacy</a></li>
+                <li class="footer-link-item"><a href="#" class="footer-link">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Shortart Software Private Limited. Reg. No:-069553 Since 2023. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    const navMenu = document.querySelector('.nav-menu');
+    const navToggle = document.createElement('button');
+    navToggle.classList.add('nav-toggle');
+    navToggle.innerHTML = '☰';
+    document.querySelector('.navbar-container').appendChild(navToggle);
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+</body>
+</html>
